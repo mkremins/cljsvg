@@ -29,6 +29,9 @@
     (interpose " ")
     (apply str)))
 
+(defn group [& [attrs]]
+  (make-svg :g (or attrs {})))
+
 (defsvg circle [[x y] r]
   {:cx x :cy y :r r})
 

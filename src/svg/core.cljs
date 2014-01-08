@@ -41,6 +41,9 @@
 (defsvg line [[x1 y1] [x2 y2]]
   {:x1 x1 :y1 y1 :x2 x2 :y2 y2})
 
+(defsvg path [d]
+  {:d d})
+
 (defsvg polygon [points]
   {:points (points->string points)})
 
